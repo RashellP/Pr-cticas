@@ -1,4 +1,4 @@
-const URL = 'https://mobile-api-ucol-herokuapp.com/'
+const URL = 'https://mobile-api-ucol.herokuapp.com/'
 
 function getToken (email, password){
     return fetch(`${URL}login`,{
