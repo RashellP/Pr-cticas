@@ -37,10 +37,11 @@ export default class LoginView extends Component{
             style = {styles.textInput}
             onChangeText = {(username) => this.setState({username})}
             value = {this.state.username}
-            placeholder = {'Correo electrónico*'}
+            placeholder = {'Correo electrónico'}
             placeholderTextColor = {'#000035'}
             onSubmitEditing = {() => {this.passwordTextInput.focus(); }}
             returnKeyType = {'next'}
+            autoCapitalize = {'none'}
             />
             <TextInput
             style = {styles.textInput}
@@ -55,7 +56,7 @@ export default class LoginView extends Component{
             />
             <TouchableOpacity onPress = {this.ingresar} style = {styles.boton}>
             <Text style = {styles.textoBoton}>
-            ENTRAR
+                ENTRAR
             </Text>
             </TouchableOpacity>
             </View>
@@ -65,7 +66,7 @@ export default class LoginView extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 2,
         width: null,
         height: null,
         backgroundColor: 'white',

@@ -28,7 +28,7 @@ export default class ArtistList extends Component<Props>{
             dataSource: this.state.dataSource.cloneWithRows(data)
         })
     }
-    handlePress(artists){
+    handlePress(artist){
         Actions.artistDetail({artist: artist})
     }
     render(){
