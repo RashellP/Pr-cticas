@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         marginTop: Platform.select({
-            ios: 90,
-            android: 50
+            ios: 170,
+            android: 130
         }),
         marginBottom: 25
     },
